@@ -8,25 +8,26 @@
 
 - POST /lines - Создание линии
   - дополнения (expand = ): 
-    - translations - вывод зависимостей с таблицей lines_translation
+    - /lines?expand=translations - вывод зависимостей с таблицей lines_translation
   - в рамках этого метода заполнение переводов линии (lines_translation)
 
 - GET /lines/{id} - Вывод линий
   - дополнения (expand = ):
-    - translations - вывод зависимостей с таблицей lines_translation
-    - stations. - вывод зависимостей с таблицей station
-      - translations - вывод зависимостей с таблицей stations_translation
-      - transfers - вывод зависимостей с таблицей stations_transfers
-      - audios - вывод зависимостей с таблицей stations_audio
-      - features - вывод зависимостей с таблицей stations_features
-    - &sort=number - Вывод списка линий(с сортировкой по полям таблицы lines)
+    - /lines/{id}?expand=translations - вывод зависимостей с таблицей lines_translation
+    - /lines/{id}?expand=stations. - вывод зависимостей с таблицей station
+      - /lines/{id}?expand=stations.translations - вывод зависимостей с таблицей stations_translation
+      - /lines/{id}?expand=stations.transfers - вывод зависимостей с таблицей stations_transfers
+      - /lines/{id}?expand=stations.audios - вывод зависимостей с таблицей stations_audio
+      - /lines/{id}?expand=stations.features - вывод зависимостей с таблицей stations_features
+    - /lines/{id}?expand=stations.translations&sort=number - Вывод списка линий(с сортировкой по полям таблицы lines)
 
 - POST /stations - Создание станции
-  - дополнения (expand = ): 
-    - translations - вывод зависимостей с таблицей stations_translation
-    - transfers - вывод зависимостей с таблицей stations_transfers
-    - audios - вывод зависимостей с таблицей stations_audio
-    - features - вывод зависимостей с таблицей stations_features
+  - дополнения (expand): 
+    - /stations?expand=translations - вывод зависимостей с таблицей stations_translation
+    - /stations?expand=transfers - вывод зависимостей с таблицей stations_transfers
+    - /stations?expand=audios - вывод зависимостей с таблицей stations_audio
+    - /stations?expand=features - вывод зависимостей с таблицей stations_features
+  - пример: - /stations?expand=translations,transfers,audios,features - сразу все зависимости
   
   - в рамках этого метода заполнение переводов станции (stations_translation)
   - в рамках этого метода заполнение пересадок станции (stations_transfers)
@@ -35,18 +36,19 @@
 
 - GET /stations/{id} - Вывод станций
   - дополнения (expand = ):
-    - translations - вывод зависимостей с таблицей stations_translation
-    - transfers - вывод зависимостей с таблицей stations_transfers
-    - audios - вывод зависимостей с таблицей stations_audio
-    - features - вывод зависимостей с таблицей stations_features
+    - /stations/{id}?expand=translations - вывод зависимостей с таблицей stations_translation
+    - /stations/{id}?expand=transfers - вывод зависимостей с таблицей stations_transfers
+    - /stations/{id}?expand=audios - вывод зависимостей с таблицей stations_audio
+    - /stations/{id}?expand=features - вывод зависимостей с таблицей stations_features
+  - /stations/{id}?expand=translations&sort=number - Вывод списка станций с сортировкой по полям
 
 - POST /stations/{id} - Редактирование данных станции
   - дополнения (expand = ):
-    - translations - вывод зависимостей с таблицей stations_translation
-    - transfers - вывод зависимостей с таблицей stations_transfers
-    - audios - вывод зависимостей с таблицей stations_audio
-    - features - вывод зависимостей с таблицей stations_features
-
+    - /stations/{id}?expand=translations - вывод зависимостей с таблицей stations_translation
+    - /stations/{id}?expand=transfers - вывод зависимостей с таблицей stations_transfers
+    - /stations/{id}?expand=audios - вывод зависимостей с таблицей stations_audio
+    - /stations/{id}?expand=features - вывод зависимостей с таблицей stations_features
+  - пример: /stations/{id}?expand=translations,transfers,audios,features - Редактирование данных станции и вывод всех возможных зависимостей
 </ul>
 
 h2> Чтобы запустить проект, выполните следующие шаги:</h2>
