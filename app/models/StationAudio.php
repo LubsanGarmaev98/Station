@@ -23,6 +23,7 @@ class StationAudio extends ActiveRecord
             ['direction', 'in', 'range' => ['forward', 'backward']],
             ['action', 'in', 'range' => ['arrive', 'departure', 'toend']],
             [['sound'], 'string', 'max' => 500],
+            [['station_id'], 'integer', 'max' => 11],
             [['station_id'], 'exist',
                 'skipOnError' => true,
                 'targetClass' => Station::class,

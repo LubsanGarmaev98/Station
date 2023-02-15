@@ -20,6 +20,8 @@ class LineTranslation extends ActiveRecord
     {
         return [
             [['language_id', 'value'], 'required'],
+            [['value'], 'string', 'max' => 255],
+            [['language_id', 'line_id'], 'integer', 'max' => 11],
             [['line_id'], 'exist',
                 'skipOnError' => true,
                 'targetClass' => Line::class,

@@ -28,7 +28,15 @@ class Station extends ActiveRecord
             [['crossPlatformColor'], 'string', 'max' => 7],
             [['scheme'], 'string', 'max' => 500],
             [['sort'], 'integer', 'max' => 11],
-            [['active'], 'integer'],
+            [['active'], 'integer', 'max' => 11],
+            [['cross_line_id'], 'integer', 'max' => 11],
+            [
+                ['line_id'], 'exist',
+                'skipOnError' => true,
+                'targetClass' => Line::class,
+                'targetAttribute' => ['line_id' => 'id'],
+                'message' => 'Line by Id not exist'
+            ],
             [
                 ['cross_line_id'], 'exist',
                 'skipOnError' => true,

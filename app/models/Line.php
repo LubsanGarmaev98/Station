@@ -15,8 +15,14 @@ class Line extends ActiveRecord
     {
         return [
             [['number', 'name', 'color'], 'required'],
-            [['number', 'name', 'color'], 'string'],
-            [['number', 'name'], 'unique'],
+            [['number', 'name'], 'string', 'unique'],
+            [['number'], 'max' => 10],
+            [['name'], 'max' => 255],
+            [['color'], 'string', 'max' => 7],
+            ['style', 'in', 'range' => ['fill', 'transparent']],
+            [['circular'], 'integer', 'max' => 1],
+            [['external_id'], 'string', 'max' => 128],
+            [['sort'], 'integer', 'max' => 11],
         ];
     }
 

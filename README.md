@@ -7,8 +7,9 @@
 <ul>
 
 - POST /lines - Создание линии
-  - дополнения: expand=translations - вывод зависимостей с таблицей lines_translation
-    - в рамках этого метода заполнение переводов линии (lines_translation)
+  - дополнения (expand = ): 
+    - translations - вывод зависимостей с таблицей lines_translation
+  - в рамках этого метода заполнение переводов линии (lines_translation)
 
 - GET /lines/{id}?expand=translations,stations.translations&sort=number - Вывод списка линий(с сортировкой по полям таблицы lines) со всеми связями (станции и их связи)
 

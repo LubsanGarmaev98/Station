@@ -20,6 +20,7 @@ class StationFeature extends ActiveRecord
     {
         return [
             [['feature_id'], 'required'],
+            [['feature_id'], 'integer', 'max' => 11],
             [
                 ['feature_id'], 'exist',
                 'skipOnError' => true,
@@ -27,6 +28,7 @@ class StationFeature extends ActiveRecord
                 'targetAttribute' => ['feature_id' => 'id'],
                 'message' => 'Service by Id not exist'
             ],
+            [['station_id'], 'integer', 'max' => 11],
             [
                 ['station_id'], 'exist',
                 'skipOnError' => true,
