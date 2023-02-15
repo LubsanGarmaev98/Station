@@ -11,7 +11,15 @@
     - translations - вывод зависимостей с таблицей lines_translation
   - в рамках этого метода заполнение переводов линии (lines_translation)
 
-- GET /lines/{id}?expand=translations,stations.translations&sort=number - Вывод списка линий(с сортировкой по полям таблицы lines) со всеми связями (станции и их связи)
+- GET /lines/{id} - Вывод линий
+  - дополнения (expand = ):
+    - translations - вывод зависимостей с таблицей lines_translation
+    - stations. - вывод зависимостей с таблицей station
+      - translations - вывод зависимостей с таблицей stations_translation
+      - transfers - вывод зависимостей с таблицей stations_transfers
+      - audios - вывод зависимостей с таблицей stations_audio
+      - features - вывод зависимостей с таблицей stations_features
+    - &sort=number - Вывод списка линий(с сортировкой по полям таблицы lines)
 
 - POST /stations - Создание станции
   - дополнения (expand = ): 
@@ -25,9 +33,19 @@
   - в рамках этого метода заполнение аудио-сообщений станции (stations_audio)
   - в рамках этого метода заполнение сервисов на станции (stations_features)
 
-- GET /stations/{id}?expand=translations,transfers,audios,features - Редактирование пользователя
+- GET /stations/{id} - Вывод станций
+  - дополнения (expand = ):
+    - translations - вывод зависимостей с таблицей stations_translation
+    - transfers - вывод зависимостей с таблицей stations_transfers
+    - audios - вывод зависимостей с таблицей stations_audio
+    - features - вывод зависимостей с таблицей stations_features
 
-- POST /stations/{id}?expand=translations,transfers,audios,features - Редактирование данных станции
+- POST /stations/{id} - Редактирование данных станции
+  - дополнения (expand = ):
+    - translations - вывод зависимостей с таблицей stations_translation
+    - transfers - вывод зависимостей с таблицей stations_transfers
+    - audios - вывод зависимостей с таблицей stations_audio
+    - features - вывод зависимостей с таблицей stations_features
 
 </ul>
 
