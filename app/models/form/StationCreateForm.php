@@ -53,6 +53,7 @@ class StationCreateForm extends Model
         if (!$this->validate()) {
             return false;
         }
+
         $transaction = Yii::$app->db->beginTransaction();
         if (!$this->station->save()) {
             $transaction->rollBack();
@@ -85,8 +86,7 @@ class StationCreateForm extends Model
 
     public function validate($attributeNames = null, $clearErrors = true)
     {
-        if(!parent::validate($attributeNames, $clearErrors))
-        {
+        if(!parent::validate($attributeNames, $clearErrors)) {
             return false;
         }
 
@@ -127,8 +127,7 @@ class StationCreateForm extends Model
 
     public function getErrors($attribute = null): array
     {
-        if($this->hasErrors())
-        {
+        if($this->hasErrors()) {
             return parent::getErrors();
         }
 

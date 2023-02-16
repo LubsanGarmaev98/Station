@@ -49,8 +49,7 @@ class LineCreateForm extends Model
 
     public function validate($attributeNames = null, $clearErrors = true)
     {
-        if(!parent::validate($attributeNames, $clearErrors))
-        {
+        if(!parent::validate($attributeNames, $clearErrors)) {
             return false;
         }
 
@@ -67,8 +66,7 @@ class LineCreateForm extends Model
 
     public function getErrors($attribute = null): array
     {
-        if($this->hasErrors())
-        {
+        if($this->hasErrors()) {
             return parent::getErrors();
         }
 
@@ -128,6 +126,5 @@ class LineCreateForm extends Model
     {
         return $this->translations;
     }
-
 
 }

@@ -30,22 +30,22 @@
 							"type": "text"
 						},
 						{
-							"key": "Translations[0][language_id]",
+							"key": "Translations[1][language_id]",
 							"value": "1",
 							"type": "text"
 						},
 						{
-							"key": "Translations[0][value]",
+							"key": "Translations[1][value]",
 							"value": "русский",
 							"type": "text"
 						},
 						{
-							"key": "Translations[1][language_id]",
+							"key": "Translations[2][language_id]",
 							"value": "2",
 							"type": "text"
 						},
 						{
-							"key": "Translations[1][value]",
+							"key": "Translations[2][value]",
 							"value": "rus",
 							"type": "text"
 						}
@@ -93,28 +93,23 @@
 							"type": "text"
 						},
 						{
-							"key": "Translations[0][language_id]",
+							"key": "Translations[1][language_id]",
 							"value": "1",
 							"type": "text"
 						},
 						{
-							"key": "Translations[0][value]",
+							"key": "Translations[1][value]",
 							"value": "Запорожье",
 							"type": "text"
 						},
 						{
-							"key": "Translations[1][language_id]",
+							"key": "Translations[2][language_id]",
 							"value": "2",
 							"type": "text"
 						},
 						{
-							"key": "Translations[1][value]",
+							"key": "Translations[2][value]",
 							"value": "Zaparozie",
-							"type": "text"
-						},
-						{
-							"key": "Transfers[0][type]",
-							"value": "metro",
 							"type": "text"
 						},
 						{
@@ -123,18 +118,8 @@
 							"type": "text"
 						},
 						{
-							"key": "Audios[0][direction]",
-							"value": "forward",
-							"type": "text"
-						},
-						{
-							"key": "Audios[0][action]",
-							"value": "arrive",
-							"type": "text"
-						},
-						{
-							"key": "Audios[0][sound]",
-							"value": "dudusfsef",
+							"key": "Transfers[2][type]",
+							"value": "metro",
 							"type": "text"
 						},
 						{
@@ -149,16 +134,31 @@
 						},
 						{
 							"key": "Audios[1][sound]",
+							"value": "dudusfsef",
+							"type": "text"
+						},
+						{
+							"key": "Audios[2][direction]",
+							"value": "forward",
+							"type": "text"
+						},
+						{
+							"key": "Audios[2][action]",
+							"value": "arrive",
+							"type": "text"
+						},
+						{
+							"key": "Audios[2][sound]",
 							"value": "welcome Zaparozie",
 							"type": "text"
 						},
 						{
-							"key": "Features[0][feature_id]",
+							"key": "Features[1][feature_id]",
 							"value": "2",
 							"type": "text"
 						},
 						{
-							"key": "Features[1][feature_id]",
+							"key": "Features[2][feature_id]",
 							"value": "3",
 							"type": "text"
 						}
@@ -288,48 +288,38 @@
 							"type": "text"
 						},
 						{
-							"key": "Translations[0][id]",
+							"key": "Translations[1][id]",
 							"value": "41",
 							"type": "text"
 						},
 						{
-							"key": "Translations[0][language_id]",
+							"key": "Translations[1][language_id]",
 							"value": "1",
 							"type": "text"
 						},
 						{
-							"key": "Translations[0][value]",
+							"key": "Translations[1][value]",
 							"value": "Наименование новое",
 							"type": "text"
 						},
 						{
-							"key": "Translations[1][id]",
+							"key": "Translations[2][id]",
 							"value": "422",
 							"type": "text"
 						},
 						{
-							"key": "Translations[1][language_id]",
+							"key": "Translations[2][language_id]",
 							"value": "2",
 							"type": "text"
 						},
 						{
-							"key": "Translations[1][value]",
+							"key": "Translations[2][value]",
 							"value": "Name new",
 							"type": "text"
 						},
 						{
-							"key": "Transfers[0][id]",
-							"value": "13",
-							"type": "text"
-						},
-						{
-							"key": "Transfers[0][type]",
-							"value": "metro",
-							"type": "text"
-						},
-						{
 							"key": "Transfers[1][id]",
-							"value": "14",
+							"value": "13",
 							"type": "text"
 						},
 						{
@@ -338,28 +328,18 @@
 							"type": "text"
 						},
 						{
-							"key": "Audios[0][id]",
-							"value": "13",
+							"key": "Transfers[2][id]",
+							"value": "14",
 							"type": "text"
 						},
 						{
-							"key": "Audios[0][direction]",
-							"value": "forward",
-							"type": "text"
-						},
-						{
-							"key": "Audios[0][action]",
-							"value": "arrive",
-							"type": "text"
-						},
-						{
-							"key": "Audios[0][sound]",
-							"value": "акацуцу",
+							"key": "Transfers[2][type]",
+							"value": "metro",
 							"type": "text"
 						},
 						{
 							"key": "Audios[1][id]",
-							"value": "14",
+							"value": "13",
 							"type": "text"
 						},
 						{
@@ -374,26 +354,46 @@
 						},
 						{
 							"key": "Audios[1][sound]",
+							"value": "акацуцу",
+							"type": "text"
+						},
+						{
+							"key": "Audios[2][id]",
+							"value": "14",
+							"type": "text"
+						},
+						{
+							"key": "Audios[2][direction]",
+							"value": "forward",
+							"type": "text"
+						},
+						{
+							"key": "Audios[2][action]",
+							"value": "arrive",
+							"type": "text"
+						},
+						{
+							"key": "Audios[2][sound]",
 							"value": "цуа",
 							"type": "text"
 						},
 						{
-							"key": "Features[0][id]",
+							"key": "Features[1][id]",
 							"value": "10",
 							"type": "text"
 						},
 						{
-							"key": "Features[0][feature_id]",
+							"key": "Features[1][feature_id]",
 							"value": "2",
 							"type": "text"
 						},
 						{
-							"key": "Features[1][id]",
+							"key": "Features[2][id]",
 							"value": "11",
 							"type": "text"
 						},
 						{
-							"key": "Features[1][feature_id]",
+							"key": "Features[2][feature_id]",
 							"value": "3",
 							"type": "text"
 						}

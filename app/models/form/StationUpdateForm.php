@@ -62,8 +62,7 @@ class StationUpdateForm extends StationCreateForm
     {
         foreach ($translations as $key => $stationTranslationData) {
             $translationModel = StationTranslation::findOne($stationTranslationData['id']);
-            if($translationModel instanceof StationTranslation)
-            {
+            if($translationModel instanceof StationTranslation) {
                 $translationModel->setAttributes($stationTranslationData);
                 $this->translations[$key] = $translationModel;
             }
@@ -74,8 +73,7 @@ class StationUpdateForm extends StationCreateForm
     {
         foreach ($transfers as $key => $stationTransferData) {
             $transferModel = StationTransfer::findOne($stationTransferData['id']);
-            if($transferModel instanceof StationTransfer)
-            {
+            if($transferModel instanceof StationTransfer) {
                 $transferModel->setAttributes($stationTransferData);
                 $this->transfers[$key] = $transferModel;
             }
@@ -86,8 +84,7 @@ class StationUpdateForm extends StationCreateForm
     {
         foreach ($audios as $key => $stationAudioData) {
             $audioModel = StationAudio::findOne($stationAudioData['id']);
-            if($audioModel instanceof StationAudio)
-            {
+            if($audioModel instanceof StationAudio) {
                 $audioModel->setAttributes($stationAudioData);
                 $this->audios[$key] = $audioModel;
             }
@@ -98,8 +95,7 @@ class StationUpdateForm extends StationCreateForm
     {
         foreach ($features as $key => $stationFeatureData) {
             $featureModel = StationFeature::findOne($stationFeatureData['id']);
-            if($featureModel instanceof StationFeature)
-            {
+            if($featureModel instanceof StationFeature) {
                 $featureModel->setAttributes($stationFeatureData);
                 $this->features[$key] = $featureModel;
             }
