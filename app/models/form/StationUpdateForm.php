@@ -7,6 +7,7 @@ use app\models\StationFeature;
 use app\models\StationTransfer;
 use app\models\StationTranslation;
 use Yii;
+
 class StationUpdateForm extends StationCreateForm
 {
     /**
