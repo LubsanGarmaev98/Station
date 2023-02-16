@@ -33,6 +33,10 @@ return [
             ],
 
         ],
+        'user' => [
+            'identityClass' => 'app\models\User',
+            'enableAutoLogin' => true,
+        ],
         'request' => [
             'parsers' => [
                 'application/json' => 'yii\web\JsonParser',

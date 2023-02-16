@@ -6,10 +6,6 @@ use yii\db\ActiveRecord;
 
 class StationTranslation extends ActiveRecord
 {
-    public function fields()
-    {
-        return parent::fields();
-    }
 
     public static function tableName()
     {

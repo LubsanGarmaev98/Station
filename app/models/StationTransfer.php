@@ -6,11 +6,6 @@ use yii\db\ActiveRecord;
 
 class StationTransfer extends ActiveRecord
 {
-    public function fields()
-    {
-        return parent::fields();
-    }
-
     public static function tableName()
     {
         return '{{stations_transfers}}';

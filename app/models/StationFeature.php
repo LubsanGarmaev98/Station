@@ -6,11 +6,6 @@ use yii\db\ActiveRecord;
 
 class StationFeature extends ActiveRecord
 {
-    public function fields()
-    {
-        return parent::fields();
-    }
-
     public static function tableName()
     {
         return '{{stations_features}}';
