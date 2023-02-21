@@ -6,14 +6,13 @@ use app\models\StationAudio;
 use app\models\StationFeature;
 use app\models\StationTransfer;
 use app\models\StationTranslation;
-use Yii;
 
 class StationUpdateForm extends StationCreateForm
 {
     /**
      * @throws \Throwable
      */
-    private function saveTranslations(): bool
+    protected function saveTranslations(): bool
     {
         foreach ($this->translations as $translation) {
             if (!$translation->save(false)) {
@@ -23,7 +22,7 @@ class StationUpdateForm extends StationCreateForm
         return true;
     }
 
-    private function saveTransfers(): bool
+    protected function saveTransfers(): bool
     {
         foreach ($this->transfers as $transfer) {
             if (!$transfer->save(false)) {
@@ -33,7 +32,7 @@ class StationUpdateForm extends StationCreateForm
         return true;
     }
 
-    private function saveAudios(): bool
+    protected function saveAudios(): bool
     {
         foreach ($this->audios as $audio) {
             if (!$audio->save(false)) {
@@ -43,7 +42,7 @@ class StationUpdateForm extends StationCreateForm
         return true;
     }
 
-    private function saveFeatures(): bool
+    protected function saveFeatures(): bool
     {
         foreach ($this->features as $feature) {
             if (!$feature->save(false)) {

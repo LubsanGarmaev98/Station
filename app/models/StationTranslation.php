@@ -17,7 +17,7 @@ class StationTranslation extends ActiveRecord
         return [
             [['language_id', 'value'], 'required'],
             [['value'], 'string', 'max' => 255],
-            [['language_id'], 'integer', 'max' => 11],
+            [['language_id'], 'integer'],
             [
                 ['language_id'], 'exist',
                 'skipOnError' => true,
@@ -25,7 +25,7 @@ class StationTranslation extends ActiveRecord
                 'targetAttribute' => ['language_id' => 'id'],
                 'message' => 'Language by Id not exist'
             ],
-            [['station_id'], 'integer', 'max' => 11],
+            [['station_id'], 'integer'],
             [['station_id'], 'exist',
                 'skipOnError' => true,
                 'targetClass' => Station::class,

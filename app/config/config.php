@@ -19,9 +19,10 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-//                '<alias:\w+>' => 'site/<alias>',
-
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'line'],
+                [
+                    'class' => 'yii\rest\UrlRule',
+                    'controller' => 'line'
+                ],
                 [
                     'class' => 'yii\rest\UrlRule',
                     'controller' => 'station',

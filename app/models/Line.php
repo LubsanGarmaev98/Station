@@ -20,9 +20,9 @@ class Line extends ActiveRecord
             [['name'], 'string', 'max' => 255],
             [['color'], 'string', 'max' => 7],
             ['style', 'in', 'range' => ['fill', 'transparent']],
-            [['circular'], 'integer', 'max' => 1],
+            [['circular'], 'integer'],
             [['external_id'], 'string', 'max' => 128],
-            [['sort'], 'integer', 'max' => 11],
+            [['sort'], 'integer'],
         ];
     }
 

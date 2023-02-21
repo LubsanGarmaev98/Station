@@ -166,7 +166,7 @@ class StationCreateForm extends Model
     /**
      * @throws \Throwable
      */
-    private function saveTranslations(): bool
+    protected function saveTranslations(): bool
     {
         foreach ($this->translations as $translation) {
             $translation->station_id = $this->station->id;
@@ -177,7 +177,7 @@ class StationCreateForm extends Model
         return true;
     }
 
-    private function saveTransfers(): bool
+    protected function saveTransfers(): bool
     {
         foreach ($this->transfers as $transfer) {
             $transfer->station_id = $this->station->id;
@@ -188,7 +188,7 @@ class StationCreateForm extends Model
         return true;
     }
 
-    private function saveAudios(): bool
+    protected function saveAudios(): bool
     {
         foreach ($this->audios as $audio) {
             $audio->station_id = $this->station->id;
@@ -199,7 +199,7 @@ class StationCreateForm extends Model
         return true;
     }
 
-    private function saveFeatures(): bool
+    protected function saveFeatures(): bool
     {
         foreach ($this->features as $feature) {
             $feature->station_id = $this->station->id;
